@@ -4,12 +4,12 @@ pipeline:
   push_to_nexus:
     image: plugins/docker
     repo: nexus.teamdigitale.test/ml-api
-    registry: nexus.teamdigitale.test
+    registry: nexus.teamdigitale.test:8081
     tags: "test"
     username: daf
     password: aquaiH3e
     dockerfile: outbox-classification/web-api/Dockerfile
-    # insecure: true
+    insecure: true
 
   # deploy the built image to Kubernetes
   # deploy_to_kube:
