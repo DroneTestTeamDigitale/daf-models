@@ -8,9 +8,7 @@ pipeline:
     tags: "test"
     username: daf
     password: aquaiH3e
-    dockerfile: outbox-classification/web-api/Dockerfile
-    volumes:
-      - /var/run/docker.sock:/var/run/docker.sock nexus.teamdigitale.test:8081 
+    dockerfile: outbox-classification/web-api/Dockerfile 
     # insecure: true
 
   # deploy the built image to Kubernetes
