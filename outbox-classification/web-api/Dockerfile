@@ -4,7 +4,7 @@ WORKDIR /app
 
 COPY outbox-classification/web-api/requirements.txt /app
 COPY outbox-classification/web-api/server.py /app
-COPY outbox-classification/web-api/data /app/data
+COPY outbox-classification/data /app/data
 COPY outbox-classification/web-api/public /app/public
 
 RUN pip install --upgrade pip
