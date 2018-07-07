@@ -3,7 +3,7 @@ pipeline:
   # 2. push to Nexus with tag 0.1.1, so that this image will be used by kube-deploy-test.yml
   push_to_nexus:
     image: plugins/docker
-    repo: "nexus.teamdigitale.test/ml-api"
+    repo: 'nexus.teamdigitale.test:8081/ml-api'
     registry: nexus.teamdigitale.test:8081
     tags: "test"
     username: daf
