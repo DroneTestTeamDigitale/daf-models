@@ -10,7 +10,9 @@ pipeline:
     password: aquaiH3e
     dockerfile: outbox-classification/web-api/Dockerfile 
     insecure: true
-
+    # volumes:
+    #   - /var/run/docker.sock:/var/run/docker.sock nexus.teamdigitale.test:8081 
+    
   # deploy the built image to Kubernetes
   # deploy_to_kube:
   #   image: vallard/drone-kube
