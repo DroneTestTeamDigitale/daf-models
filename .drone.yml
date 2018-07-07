@@ -9,7 +9,7 @@ pipeline:
     username: daf
     password: aquaiH3e
     dockerfile: outbox-classification/web-api/Dockerfile 
-    # insecure: true
+    insecure: true
 
   # deploy the built image to Kubernetes
   # deploy_to_kube:
