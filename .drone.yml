@@ -8,9 +8,7 @@ pipeline:
     tags: "test"
     secrets: [ docker_username, docker_password ]
     dockerfile: outbox-classification/web-api/Dockerfile 
-    insecure: true
-    # volumes:
-    #   - /var/run/docker.sock:/var/run/docker.sock nexus.teamdigitale.test:8081 
+    insecure: true 
     
   # deploy the built image to Kubernetes
   # deploy_to_kube:
