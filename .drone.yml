@@ -24,7 +24,8 @@ pipeline:
   deploy:
     image: quay.io/honestbee/drone-kubernetes
     kubernetes_server: https://rancher.teamdigitale.test:8080/r/projects/1a12869/kubernetes:6443
-    kubernetes_token: ${kube_token}
+    kubernetes_token: "QmFzaWMgUVVNME5FVXhNa1pDT0RVME1EWkRPRVV6TlVVNmNtNXZjMmxCZEhaMWFFcE5iVFZHY0dSdldIVXlXRkZqVXpWVmJXTlhTRkpFT0V4RE5VNVVadz09"
+    kubernetes_user: "testkube"
     namespace: default
     deployment: ml-api-deployment
     repo: nexus.teamdigitale.test/ml-api
