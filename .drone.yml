@@ -1,19 +1,20 @@
 pipeline:
   # 1. build the new docker image from Dockerfile 
   # 2. push to Nexus with tag 0.1.1, so that this image will be used by kube-deploy-test.yml
-  build_and_push_to_nexus:
-    image: plugins/docker
-    repo: 'nexus.teamdigitale.test/ml-api'
-    registry: nexus.teamdigitale.test
-    tags: "test"
-    secrets: [ docker_username, docker_password ]
-    dockerfile: outbox-classification/web-api/Dockerfile 
-    insecure: true 
+  # build_and_push_to_nexus:
+  #   image: plugins/docker
+  #   repo: 'nexus.teamdigitale.test/ml-api'
+  #   registry: nexus.teamdigitale.test
+  #   tags: "test"
+  #   secrets: [ docker_username, docker_password ]
+  #   dockerfile: outbox-classification/web-api/Dockerfile 
+  #   insecure: true 
     
   # deploy the built image to Kubernetes
   deploy_to_kube:
     image: vallard/drone-kube
     template: kube-deploy-test.yml
     namespace: default
+    secrets: [ kube_token, kube_server ]
     # server: https://rancher.teamdigitale.test:8080/r/projects/1a12869/kubernetes:6443
 
