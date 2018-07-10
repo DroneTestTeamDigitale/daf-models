@@ -22,7 +22,7 @@
 
 pipeline:
   deploy:
-    image: quay.io/honestbee/drone-kubernetes
+    image: lorenzosoligo/drone-kubernetes-plugin
     kubernetes_server: "https://rancher.teamdigitale.test:8080/r/projects/1a12869/kubernetes:6443"
     kubernetes_token: "QmFzaWMgUVVNME5FVXhNa1pDT0RVME1EWkRPRVV6TlVVNmNtNXZjMmxCZEhaMWFFcE5iVFZHY0dSdldIVXlXRkZqVXpWVmJXTlhTRkpFT0V4RE5VNVVadz09"
     kubernetes_user: "testkube"
