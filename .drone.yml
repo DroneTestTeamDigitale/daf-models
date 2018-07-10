@@ -16,18 +16,17 @@
 #     template: outbox-classification/web-api/kube-deploy-test.yml
 #     namespace: default
 #     secrets: [ kube_ca, kube_token, kube_server ]
-    
 
 
 pipeline:
-  #   # build_and_push_to_nexus:
-#   #   image: plugins/docker
-#   #   repo: 'nexus.teamdigitale.test/ml-api'
-#   #   registry: nexus.teamdigitale.test
-#   #   tags: "test"
-#   #   secrets: [ docker_username, docker_password ]
-#   #   dockerfile: outbox-classification/web-api/Dockerfile 
-#   #   insecure: true 
+  # build_and_push_to_nexus:
+  #   image: plugins/docker
+  #   repo: 'nexus.teamdigitale.test/ml-api'
+  #   registry: nexus.teamdigitale.test
+  #   tags: "test"
+  #   secrets: [ docker_username, docker_password ]
+  #   dockerfile: outbox-classification/web-api/Dockerfile 
+  #   insecure: true 
 
   deploy:
     image: "lorenzosoligo/drone-kubernetes-plugin"
