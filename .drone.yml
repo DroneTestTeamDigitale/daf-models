@@ -27,6 +27,8 @@ pipeline:
     kubernetes_token: "QmFzaWMgUVVNME5FVXhNa1pDT0RVME1EWkRPRVV6TlVVNmNtNXZjMmxCZEhaMWFFcE5iVFZHY0dSdldIVXlXRkZqVXpWVmJXTlhTRkpFT0V4RE5VNVVadz09"
     environment:
       - PLUGIN_KUBERNETES_USER="testkube"
+    commands:
+      - export PLUGIN_KUBERNETES_USER="testkube"
     namespace: default
     deployment: ml-api-deployment
     repo: nexus.teamdigitale.test/ml-api
