@@ -18,4 +18,3 @@ pipeline:
     secrets: [ kube_ca, kube_token, kube_server ]
     
     # server: https://rancher.teamdigitale.test:8080/r/projects/1a12869/kubernetes:6443
-

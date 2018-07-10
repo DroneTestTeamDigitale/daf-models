@@ -2,7 +2,6 @@
 
 ## Setup
 
-
 In order to setup the env we use [miniconda](https://conda.io/miniconda.html).
 To create the environment run the following command (after miniconda is installed)
 
