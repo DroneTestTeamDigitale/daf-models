@@ -12,3 +12,4 @@ $ conda env create -f environment.yaml
 ## Projects
 
 1. Document Categorization
+
