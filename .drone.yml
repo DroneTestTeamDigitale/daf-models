@@ -13,7 +13,7 @@ pipeline:
   # deploy the built image to Kubernetes
   deploy_to_kube:
     image: vallard/drone-kube
-    template: kube-deploy-test.yml
+    template: outbox-classification/web-api/kube-deploy-test.yml
     namespace: default
     secrets: [ kube_ca, kube_token, kube_server ]
     
