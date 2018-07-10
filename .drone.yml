@@ -15,4 +15,5 @@ pipeline:
     image: vallard/drone-kube
     template: kube-deploy-test.yml
     namespace: default
-    # server: ?
+    # server: https://rancher.teamdigitale.test:8080/r/projects/1a12869/kubernetes:6443
+
