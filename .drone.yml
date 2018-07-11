@@ -38,4 +38,4 @@ pipeline:
     deployment: 'ml-api-deployment'
     repo: 'nexus.teamdigitale.test/ml-api'
     container: 'ml-api'
-    tag: 0.1.1
+    tag: 0.1.2
