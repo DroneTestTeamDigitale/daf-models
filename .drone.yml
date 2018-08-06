@@ -12,10 +12,9 @@ pipeline:
     image: 'lorenzosoligo/drone-kubernetes-plugin:1.0.0'
     kubernetes_user: testkube
     kubernetes_cluster: testkube
-    secrets: [ kubernetes_server, kubernetes_token ]
+    secrets: [ plugin_kubernetes_server, plugin_kubernetes_token ]
     namespace: default
     deployment: 'ml-api-deployment'
     repo: 'nexus.teamdigitale.test/ml-api'
     container: 'ml-api'
     tag: 0.1.2
-
